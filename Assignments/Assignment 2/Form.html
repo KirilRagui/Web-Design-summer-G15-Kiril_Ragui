@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Form</title>
+    </head>
+
+
+
+    <body>
+
+        <form action="index.html" autocomplete="off" method="post">
+        <fieldset width=50%>
+            <legend>User Info</legend>
+            <label>First Name:</label>
+            <input type="text" name="firstName" required placeholder="enter your first name" autofocus><br><br>
+            <label>Last Name:</label>
+            <input type="text" name="lastName" required placeholder="enter your last name"><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" required placeholder="enter your email"><br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required placeholder="enter your password"><br><br>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" required> Male
+            <input type="radio" name="gender" value="female" required> Female <br><br>
+            <label>Courses</label>
+            <input type="checkbox" name="courses" value="html"> HTML
+            <input type="checkbox" name="courses" value="css"> CSS
+            <input type="checkbox" name="courses" value="css"> Js
+            <input type="checkbox" name="courses" value="css"> Bootstrap <br><br>
+            <label>Age:</label>
+            <input type="number" name="age" required placeholder="enter your age" min="5" max="60"><br><br>
+            <select required name="track" multiple>
+                <option disabled selected >Please select a track</option>
+                <option>Frontend</option>
+                <option>Backend</option>
+                <option>Fullstack</option>
+            </select>
+            <input type="file" name="file" multiple accept=".png"><br><br>
+            <label>Enter your birthday:</label>
+            <input type="date" name="birthday" ><br><br>
+            <label>How likely are you to recommend this course?</label>
+            <input type="range" name="recommendation" min="0" max="10"><br><br>
+            <label for="country">Country:</label>
+
+            <input type="text" id="country" list="countries"><br><br>
+
+            <datalist id="countries"> 
+            <option value="Egypt">
+            <option value="France">
+            <option value="Germany">
+            <option value="Italy">
+            <option value="Canada">
+            </datalist>
+            <label>Enter your phone number </label>
+            <input type="text" pattern="01(0|1|2|5)[0-9]{8}" maxlength="11" minlength="11" required><br><br>
+            <textarea name="message" placeholder="Any comments?" cols="40" rows="5"></textarea><br><br>
+        
+            <button type="submit" value="Register">Register</button>
+            <button type="submit" value="Log in">Log in</button>
+            <button type="reset" value="Clear data">Clear data</button>
+
+        </fieldset>
+        </form>
+
+    </body>
+
+</html>
